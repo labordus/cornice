@@ -12,8 +12,6 @@ import dirctrl, fileops, vfs
 import clipboard
 import exif_info
 
-import collection, albums
-
 
 class CorniceBrowser(wx.Frame):
     def __init__(self, img_viewer, path, **kwds):
@@ -41,7 +39,6 @@ class CorniceBrowser(wx.Frame):
                                         style=wx.SUNKEN_BORDER |
                                         wx.DIRCTRL_DIR_ONLY)
         self.bookmarks = bmarks.BookMarksCtrl(self.notebook)
-        self.albums = albums.AlbumsCtrl(self.notebook)
             
         self.viewer = img_viewer
         self.viewer.cornice_browser = self
@@ -49,8 +46,6 @@ class CorniceBrowser(wx.Frame):
         self.options = kwds
         self.picture_list = picture_list.PictureList(self.window_1_pane_2, -1,
                                                      self.options, self)
-        self.albums.picture_list = self.picture_list
-        
         # Menu Bar
         res = wx.xrc.XmlResource_Get()
         res.Load('resources.xrc')
@@ -244,15 +239,6 @@ class CorniceBrowser(wx.Frame):
         wx.EVT_MENU(self, wx.xrc.XRCID('paste'),
                     lambda e: self.picture_list.clipboard_paste())
 
-
-        # collection management...
-        wx.EVT_MENU(self, wx.xrc.XRCID('create_album'),
-                    lambda e: self.albums.add_album())
-        wx.EVT_MENU(self, wx.xrc.XRCID('add_to_album'),
-                    lambda e: self.add_to_album())
-        wx.EVT_MENU(self, wx.xrc.XRCID('edit_albums'),
-                    lambda e: self.albums.edit_albums())
-
         # image popup menu...        
         mb = self.GetMenuBar()
         edit_menu = mb.GetMenu(mb.FindMenu(_('&Edit')))
@@ -260,15 +246,6 @@ class CorniceBrowser(wx.Frame):
             self.picture_list.popup_menu(edit_menu, event.GetPosition())
             event.Skip()
         picture_list.EVT_PICTURE_RIGHT_CLICK(self, -1, popup_menu)
-
-    def add_to_album(self):
-        pictures = self.picture_list.get_selected_filenames()
-        albumid, name = self.albums.choose_album()
-        if albumid == 0:
-            albumid = collection.add_album(name)
-        if albumid > 0:
-            collection.add_to_album(pictures, albumid)
-            self.albums.load_albums()
 
     def open_archive(self, path=[None]):
         if path[0] is None:
@@ -355,7 +332,6 @@ class CorniceBrowser(wx.Frame):
                                       self.window_1_pane_2, sp1)
         self.notebook.AddPage(self.dir_ctrl, _('Tree'))
         self.notebook.AddPage(self.bookmarks, _('Bookmarks'))
-        self.notebook.AddPage(self.albums, _('Albums'))
         self.statusbar.SetStatusWidths([150, 200, -1, 150])
 ##         if wx.Platform == '__WXMSW__':
 ##             icon = wx.Icon('icons/icon.ico', wx.BITMAP_TYPE_ICO)

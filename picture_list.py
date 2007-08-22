@@ -403,9 +403,6 @@ class PictureList(wx.Panel):
         items = self.list.get_selected_filenames()
         if items:
             msg = _("Delete %s picture(s)?") % len(items)
-            if fileops.is_collection(self.path):
-                msg = _("Remove %s picture(s) from the collection?") % \
-                      len(items)
         if items and \
                wx.MessageBox(msg, _("Are you sure?"),
                              wx.YES_NO|wx.CENTRE|wx.ICON_QUESTION) == wx.YES:

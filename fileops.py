@@ -10,7 +10,7 @@ import os, stat, time, dircache
 import zipfile, cStringIO
 import urllib
 
-import picture, collection
+import picture
 
 __all__ = ['isdir', 'normpath', 'listdir', 'get_path_info',
            'open', 'get_icon_index']
@@ -20,13 +20,9 @@ def _check_end(path):
     return path.endswith('#zip:') or path.endswith('/')
 
 
-def is_collection(path):
-    return path.startswith('collection:')
-
 def isdir(path):
     path = path.strip()
     if os.path.isdir(path) or \
-       is_collection(path) or \
        (zipfile.is_zipfile(path.split('#zip:')[0]) and _check_end(path)):
         return True
     return False
@@ -89,25 +85,6 @@ def listdir(path):
                 out.append(picture.Picture(fullname, info))
             except:
                 pass
-        return out
-    elif path.startswith('collection:'):
-        print 'OK, setting path!', path
-        path = path[11:]
-        print 'path now:', path
-        if not path or path[0] != '?':
-            return []
-        params = {}
-        for elem in path[1:].split('&'):
-            key, val = [urllib.unquote(s) for s in elem.split('=')]
-            params[key] = val
-        for res in collection.query(params):
-            try:
-                info = get_path_info(str(res[0]))
-                img = picture.Picture(res[0], info)
-                img.name = res[1]
-                out.append(img)
-            except:
-                import traceback; traceback.print_exc()
         return out
     else:
         try:
@@ -211,18 +188,9 @@ def get_icon_index(path):
 
 
 def delete_from(path, files):
-    if not is_collection(path):
-        for name in files:
-            try:
-                unlink(name)
-            except (IOError, OSError), e:
-                #import traceback; traceback.print_exc(e)
-                wx.LogError(str(e))
-    else:
-        path = path[11:]
-        if path and path[0] == '?':
-            params = {}
-            for elem in path[1:].split('&'):
-                key, val = [urllib.unquote(s) for s in elem.split('=')]
-                params[key] = val
-            collection.remove_from(params, files)
+    for name in files:
+        try:
+            unlink(name)
+        except (IOError, OSError), e:
+            #import traceback; traceback.print_exc(e)
+            wx.LogError(str(e))

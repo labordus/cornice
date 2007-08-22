@@ -7,7 +7,6 @@ import wx, wx.xrc
 import Image
 import os, sys, common
 
-import collection
 
 
 class BookMarksEditor:
@@ -386,96 +385,3 @@ class AboutDialog:
         self.dialog.ShowModal()
 
 # end of class AboutDialog
-
-
-class AlbumsEditor:
-    def __init__(self, ctrl):
-        self.ctrl = ctrl
-        res = wx.xrc.XmlResource_Get()
-        self.dialog = res.LoadDialog(None, 'albums_editor')
-        wx.EVT_LIST_ITEM_SELECTED(self.dialog,
-                                  wx.xrc.XRCID('albums_list'),
-                                  self.on_item_selected)
-        wx.EVT_BUTTON(self.dialog, wx.xrc.XRCID('add'), self.add_item)
-        wx.EVT_BUTTON(self.dialog, wx.xrc.XRCID('remove'), self.remove_item)
-        wx.EVT_KILL_FOCUS(wx.xrc.XRCCTRL(self.dialog, 'name'),
-                          self.update_item)
-        list_ctrl = wx.xrc.XRCCTRL(self.dialog, 'albums_list')
-        list_ctrl.InsertColumn(0, _('Name'))
-        self.albumids = {}
-        self.fill_albums_list()
-        self.dialog.ShowModal()
-        self.dialog.Destroy()
-
-    def fill_albums_list(self):
-        self.selected_index = -1
-        self.albumids = {}
-        item = -1
-        list_ctrl = wx.xrc.XRCCTRL(self.dialog, 'albums_list')
-        list_ctrl.Freeze()
-        list_ctrl.DeleteAllItems()
-        for (albumid, name) in collection.get_albums():
-            item = list_ctrl.InsertStringItem(item+1, name)
-            self.albumids[name] = albumid
-        list_ctrl.SetColumnWidth(0, list_ctrl.GetClientSize()[0])
-        list_ctrl.Thaw()
-
-    def add_item(self, event):
-        name = wx.xrc.XRCCTRL(self.dialog, 'name').GetValue().strip()
-        if name:
-            if not collection.add_album(name):
-                wx.MessageBox(_("The album `%s' is already present.") % name,
-                              _("Information"), wx.OK|wx.ICON_INFORMATION)
-            else:
-                self.fill_albums_list()
-
-    def update_item(self, event):
-        name = wx.xrc.XRCCTRL(self.dialog, 'name').GetValue().strip()
-        list_ctrl = wx.xrc.XRCCTRL(self.dialog, 'albums_list')
-        if name and self.selected_index >= 0:
-            oldname = list_ctrl.GetItem(self.selected_index, 0).GetText()
-            albumid = self.albumids[oldname]
-            if not collection.rename_album(albumid, name):
-                wx.MessageBox(_("The album `%s' is already present.") % name,
-                              _("Information"), wx.OK|wx.ICON_INFORMATION)
-            else:
-                self.fill_albums_list()
-
-    def on_item_selected(self, event):
-        self.selected_index = event.GetIndex()
-        list_ctrl = wx.xrc.XRCCTRL(self.dialog, 'albums_list')
-        name = wx.xrc.XRCCTRL(self.dialog, 'name')
-        name.SetValue(list_ctrl.GetItem(self.selected_index, 0).GetText())
-        event.Skip()
-
-    def remove_item(self, event):
-        list_ctrl = wx.xrc.XRCCTRL(self.dialog, 'albums_list')
-        name = wx.xrc.XRCCTRL(self.dialog, 'name')
-        if 0 <= self.selected_index < list_ctrl.GetItemCount():
-            name.SetValue("")
-            oldname = list_ctrl.GetItem(self.selected_index, 0).GetText()
-            albumid = self.albumids[oldname]
-            list_ctrl.DeleteItem(self.selected_index)
-            collection.remove_album(albumid)
-
-# end of class AlbumsEditor
-
-
-class AlbumChooser(object):
-    def __init__(self, parent, choices):
-        res = wx.xrc.XmlResource_Get()
-        self.dialog = res.LoadDialog(parent, 'album_chooser')
-        self.choices = wx.xrc.XRCCTRL(self.dialog, 'choices')
-        for c in choices:
-            self.choices.Append(c)
-
-    def show_modal(self):
-        return self.dialog.ShowModal()
-
-    def get_selection(self):
-        return self.choices.GetValue()
-
-    def destroy(self):
-        self.dialog.Destroy()
-
-# end of class AlbumChooser

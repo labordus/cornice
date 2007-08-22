@@ -4,6 +4,9 @@
 # author: Alberto Griggio <agriggio@users.sourceforge.net>
 # license: GPL
 
+import wxversion
+wxversion.select("2.6")
+
 import sys, os
 import getopt
 
