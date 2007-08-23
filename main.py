@@ -602,7 +602,10 @@ class Cornice(wx.App):
         self._droptarget = clipboard.PathDropTarget(self)
         self.main_frame.SetDropTarget(self._droptarget)
         self.viewer_frame.SetDropTarget(self._droptarget)
-        wx.EVT_CLOSE(self.main_frame, common.exit_app)
+        if self.trayicon is None:
+            wx.EVT_CLOSE(self.main_frame, common.exit_app)
+        else:
+            wx.EVT_CLOSE(self.main_frame, lambda e: self.main_frame.Hide())
 
         self.SetTopWindow(self.main_frame)
 
