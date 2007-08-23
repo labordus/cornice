@@ -7,7 +7,7 @@ import wx
 import os, sys, locale, Image
 import threading
 
-__version__ = '0.6.1'
+__version__ = '0.6.2'
 
 if os.path.expanduser('~') != '~':
     bookmarks_file = os.path.expanduser('~/.cornice/bookmarks')
