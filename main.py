@@ -462,7 +462,7 @@ class Cornice(wx.App):
             'show_tray_icon': '0',
             'use_system_dialogs': '1',
             # thumbs_style: 0 = simple, 1 = button, 2 = frame
-            'thumbs_style': wx.Platform != '__WXMAC__' and '1' or '2',
+            'thumbs_style': '2',
             'details_bg_color': '1',
             }
         common.config = ConfigParser.ConfigParser(defaults)
