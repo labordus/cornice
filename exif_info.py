@@ -102,6 +102,8 @@ def exif_orient(image_file, pil_image):
             pil_image = pil_image.transpose(_orientations[orientation])
         elif orientation != 1:
             print 'Unsupported EXIF Image Orientation:', orientation
+    except KeyError, e:
+        pass
     except Exception, e:
         import traceback; traceback.print_exc()
     return pil_image

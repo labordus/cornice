@@ -395,19 +395,23 @@ class CorniceBrowser(wx.Frame):
             if show:
                 if self.preview_notebook.IsShown():
                     return
+                #self.preview_notebook.Show()
+                self.exif_info.Hide()
                 self.preview_panel.Reparent(self.preview_notebook)
                 self.preview_notebook.InsertPage(0, self.preview_panel,
                                                  _("Preview"), True)
-                self.preview_notebook.Layout()
+                #self.preview_notebook.Layout()
                 self.preview_notebook.Show()
+                self.exif_info.Show()
                 other = self.preview_notebook
             else:
                 if not self.preview_notebook.IsShown():
                     return
+                self.preview_notebook.Hide()
                 if wx.Platform == '__WXMSW__' or wx.VERSION[:2] < (2, 5):
                     self.preview_notebook.RemovePage(0)
                 self.preview_panel.Reparent(self.window_2)
-                self.preview_notebook.Hide()
+                #self.preview_notebook.Hide()
                 other = self.preview_panel
             self.window_2.ReplaceWindow(self.window_2.GetWindow2(), other)
             self.window_2.Layout()
@@ -509,7 +513,7 @@ class Cornice(wx.App):
         import __builtin__
         setattr(__builtin__, '_', wx.GetTranslation)
 
-        wx.ArtProvider_PushProvider(CorniceArtProvider())
+        wx.ArtProvider_Push(CorniceArtProvider())
 
         if common.config.getboolean('cornice', 'show_tray_icon'):
             import tray

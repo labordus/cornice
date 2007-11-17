@@ -228,7 +228,9 @@ class CorniceViewer(wx.ScrolledWindow):
                 zoom = h / self.pil_image.size[0] * 100
             else:
                 zoom = w / self.pil_image.size[0] * 100
-        self.GetParent().GetStatusBar().SetStatusText('%.0f%%' % zoom, 3)
+        sb = self.GetParent().GetStatusBar()
+        if sb:
+            sb.SetStatusText('%.0f%%' % zoom, 3)
         self._wait_a_minute = False
 
     def paint_image(self):

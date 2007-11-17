@@ -18,7 +18,7 @@ else:
     _sb_offset = 5
     _sb_gap = 5
 
-if wx.Platform == '__WXMSW__':
+if True:#wx.Platform == '__WXMSW__':
     class _PreviewPanel(wx.Window):
         def __init__(self, *args, **kwds):
             wx.Window.__init__(self, *args, **kwds)
