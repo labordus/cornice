@@ -5,5 +5,3 @@ syntax: glob
 **.mo
 **_OLD
 **.rej
-
-resources.xrc
