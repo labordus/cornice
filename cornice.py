@@ -4,8 +4,8 @@
 # author: Alberto Griggio <agriggio@users.sourceforge.net>
 # license: GPL
 
-#import wxversion
-#wxversion.select("2.6")
+import wxversion
+wxversion.select("2.6")
 
 import sys, os
 import getopt
@@ -35,8 +35,8 @@ def main():
 
     if args:
         path = os.path.abspath(os.path.expanduser(args[0]))
-
-    if remote.ping():
+        
+    if False: #remote.ping():
         if slideshow:
             cmd = 'SLIDESHOW'
         else:

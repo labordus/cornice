@@ -513,7 +513,10 @@ class Cornice(wx.App):
         import __builtin__
         setattr(__builtin__, '_', wx.GetTranslation)
 
-        wx.ArtProvider_Push(CorniceArtProvider())
+        if hasattr(wx, 'ArtProvider_Push'):
+            wx.ArtProvider_Push(CorniceArtProvider())
+        elif hasattr(wx, 'ArtProvider_PushProvider'):
+            wx.ArtProvider_PushProvider(CorniceArtProvider())
 
         if common.config.getboolean('cornice', 'show_tray_icon'):
             import tray
@@ -579,11 +582,12 @@ class Cornice(wx.App):
 ##         self.main_frame = frame
 ##         self.viewer = panel
 ##         self.viewer_frame = viewer_frame
-        
-        import remote
-        thread = remote.init_server(self)
-        remote.EVT_REMOTE_COMMAND(self, self.on_remote_command)
-        thread.start()
+
+        if False:
+            import remote
+            thread = remote.init_server(self)
+            remote.EVT_REMOTE_COMMAND(self, self.on_remote_command)
+            thread.start()
 
         clipboard.EVT_DROP_PATH(self, -1, self.on_drop_path)
 
