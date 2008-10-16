@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Cornice\n"
-"POT-Creation-Date: 2008-10-16 08:48+CEST\n"
+"POT-Creation-Date: 2008-10-16 13:56+CEST\n"
 "PO-Revision-Date: 2008-10-16 05:32+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,7 +11,7 @@ msgstr ""
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: POLAND\n"
 
-#: bmarks.py:28 exif_info.py:19 picture_list.py:52 resources.py:38 tmp.py:62
+#: bmarks.py:28 exif_info.py:19 picture_list.py:52 resources.py:38 tmp1.py:62
 msgid "Name"
 msgstr "Nazwa"
 
@@ -113,7 +113,7 @@ msgstr ""
 msgid "Cornice Viewer Key Bindings"
 msgstr "Skróty klawiszy przeglądarki obrazów Cornice"
 
-#: main.py:244 tmp.py:30
+#: main.py:244 tmp1.py:30
 msgid "&Edit"
 msgstr "&Edytuj"
 
@@ -141,11 +141,11 @@ msgstr "Przeglądarka obrazów - Cornice"
 msgid "Unable to save preferences (%s)"
 msgstr "Nie można zapisać preferencji (%s)"
 
-#: picture_list.py:53 tmp.py:63
+#: picture_list.py:53 tmp1.py:63
 msgid "Date"
 msgstr "Data"
 
-#: picture_list.py:54 tmp.py:64
+#: picture_list.py:54 tmp1.py:64
 msgid "Size"
 msgstr "Rozmiar"
 
@@ -206,216 +206,216 @@ msgstr ""
 "Licencja: GPL (zobacz license.txt)\n"
 "TEN PROGRAM JEST UDOSTĘPNIONY BEZ ŻADNEJ GWARANCJI"
 
-#: tmp.py:1
+#: tmp1.py:1
 msgid "Bookmarks Editor - Cornice"
 msgstr "Edytor zakładek - Cornice"
 
-#: tmp.py:2
+#: tmp1.py:2
 msgid "Bookmark"
 msgstr "Zakładka"
 
-#: tmp.py:3
+#: tmp1.py:3
 msgid "Name:"
 msgstr "Nazwa:"
 
-#: tmp.py:4
+#: tmp1.py:4
 msgid "Path:"
 msgstr "Ściezka:"
 
-#: tmp.py:5
+#: tmp1.py:5
 msgid "Add"
 msgstr "Dodaj"
 
-#: tmp.py:6
+#: tmp1.py:6
 msgid "Remove"
 msgstr "Usuń"
 
-#: tmp.py:7
+#: tmp1.py:7
 msgid "Move Up"
 msgstr "W górę"
 
-#: tmp.py:8
+#: tmp1.py:8
 msgid "Move Down"
 msgstr "W dół"
 
-#: tmp.py:9 tmp.py:56 tmp.py:103
+#: tmp1.py:9 tmp1.py:56 tmp1.py:103
 msgid "OK"
 msgstr "OK"
 
-#: tmp.py:10 tmp.py:23 tmp.py:104
+#: tmp1.py:10 tmp1.py:23 tmp1.py:104
 msgid "Cancel"
 msgstr "Anuluj"
 
-#: tmp.py:11
+#: tmp1.py:11
 msgid "The image already exists"
 msgstr "Obraz już istnieje"
 
-#: tmp.py:12
+#: tmp1.py:12
 msgid "Do you want to overwrite the image on the left with that on the right?"
 msgstr "Czy chcesz zastąpić obraz po lewej stronie z tym na prawej?"
 
-#: tmp.py:13
+#: tmp1.py:13
 msgid "orig&image&info"
 msgstr ""
 
-#: tmp.py:14
+#: tmp1.py:14
 msgid "new&image&info"
 msgstr ""
 
-#: tmp.py:15
+#: tmp1.py:15
 msgid "orig&file&info"
 msgstr ""
 
-#: tmp.py:16
+#: tmp1.py:16
 msgid "new&file&info"
 msgstr ""
 
-#: tmp.py:17
+#: tmp1.py:17
 msgid "New image name"
 msgstr "Nowa nazwa obrazu"
 
-#: tmp.py:18
+#: tmp1.py:18
 msgid "Rename"
 msgstr "Zmień nazwę"
 
-#: tmp.py:19
+#: tmp1.py:19
 msgid "Skip"
 msgstr "Pomiń"
 
-#: tmp.py:20
+#: tmp1.py:20
 msgid "Auto skip"
 msgstr "Automatyczne pomijanie"
 
-#: tmp.py:21
+#: tmp1.py:21
 msgid "Overwrite"
 msgstr "Nadpisuj"
 
-#: tmp.py:22
+#: tmp1.py:22
 msgid "Overwrite all"
 msgstr "Nadpisuj wszystko"
 
-#: tmp.py:24
+#: tmp1.py:24
 msgid "&File"
 msgstr "&Plik"
 
-#: tmp.py:25
+#: tmp1.py:25
 msgid "View"
 msgstr "Pokaż"
 
-#: tmp.py:26
+#: tmp1.py:26
 msgid "Up directory"
 msgstr "Nadrzędny katalog"
 
-#: tmp.py:27
+#: tmp1.py:27
 msgid "Open ZIP archive\tCtrl+O"
 msgstr "Otwórz archiwum ZIP\tCtrl+O"
 
-#: tmp.py:28
+#: tmp1.py:28
 msgid "Preferences...\tCtrl+P"
 msgstr "Preferencje...\tCtrl+P"
 
-#: tmp.py:29
+#: tmp1.py:29
 msgid "E&xit\tCtrl+Q"
 msgstr "&Wyjdź\tCtrl+Q"
 
-#: tmp.py:31
+#: tmp1.py:31
 #, fuzzy
 msgid "Delete\tDel"
 msgstr "Usuń wybór\tDel"
 
-#: tmp.py:32
+#: tmp1.py:32
 msgid "Cut\tCtrl+X"
 msgstr "Wytnij\tCtrl+X"
 
-#: tmp.py:33
+#: tmp1.py:33
 msgid "Copy\tCtrl+C"
 msgstr "Kopiuj\tCtrl+C"
 
-#: tmp.py:34
+#: tmp1.py:34
 msgid "Paste\tCtrl+V"
 msgstr "Wklej\tCtrl+V"
 
-#: tmp.py:35
+#: tmp1.py:35
 msgid "&View"
 msgstr "&Widok"
 
-#: tmp.py:36
+#: tmp1.py:36
 msgid "Details\tF3"
 msgstr "Szczegóły\tF3"
 
-#: tmp.py:37
+#: tmp1.py:37
 msgid "Thumbnails\tF4"
 msgstr "Miniatury\tF4"
 
-#: tmp.py:38
+#: tmp1.py:38
 msgid "Tree\tAlt+T"
 msgstr "Drzewo\tAlt+T"
 
-#: tmp.py:39
+#: tmp1.py:39
 msgid "Bookmarks\tAlt+B"
 msgstr "Zakładki\tAlt+B"
 
-#: tmp.py:40
+#: tmp1.py:40
 msgid "Hidden dirs\tCtrl+H"
 msgstr "Ukryte katalogi\tCtrl+H"
 
-#: tmp.py:41
+#: tmp1.py:41
 msgid "Refresh\tF5"
 msgstr "Odśwież\tF5"
 
-#: tmp.py:42
+#: tmp1.py:42
 msgid "Sort"
 msgstr "Sortuj"
 
-#: tmp.py:43
+#: tmp1.py:43
 msgid "By Name"
 msgstr "według nazwy"
 
-#: tmp.py:44
+#: tmp1.py:44
 msgid "By Date"
 msgstr "według daty"
 
-#: tmp.py:45
+#: tmp1.py:45
 msgid "By Size"
 msgstr "według rozmiaru"
 
-#: tmp.py:46
+#: tmp1.py:46
 msgid "By Image Properties"
 msgstr "według właściwości obrazu"
 
-#: tmp.py:47
+#: tmp1.py:47
 msgid "Reverse"
 msgstr "Odwróć"
 
-#: tmp.py:48
+#: tmp1.py:48
 msgid "&Bookmarks"
 msgstr "&Zakładki"
 
-#: tmp.py:49
+#: tmp1.py:49
 msgid "Add bookmark\tCtrl+D"
 msgstr "Dodaj zakładkę\tCtrl+D"
 
-#: tmp.py:50
+#: tmp1.py:50
 msgid "Edit Bookmarks..."
 msgstr "Edytuj zakładki..."
 
-#: tmp.py:51
+#: tmp1.py:51
 msgid "&Help"
 msgstr "Pomo&c"
 
-#: tmp.py:52
+#: tmp1.py:52
 msgid "Viewer keybindings\tF1"
 msgstr "Skróty klawiszy przeglądarki obrazów\tF1"
 
-#: tmp.py:53
+#: tmp1.py:53
 msgid "About..."
 msgstr "O..."
 
-#: tmp.py:54
+#: tmp1.py:54
 msgid "About Cornice"
 msgstr "O Cornice"
 
-#: tmp.py:55
+#: tmp1.py:55
 #, fuzzy
 msgid ""
 "Cornice v%s: a Python + wxPython + PIL image viewer\n"
@@ -432,177 +432,254 @@ msgstr ""
 "Licencja: GPL (zobacz license.txt)\n"
 "TEN PROGRAM JEST UDOSTĘPNIONY BEZ ŻADNEJ GWARANCJI"
 
-#: tmp.py:57
+#: tmp1.py:57
 msgid "Preferences - Cornice"
 msgstr "Preferencje - Cornice"
 
-#: tmp.py:58
+#: tmp1.py:58
 msgid "Browser"
 msgstr "Przeglądarka"
 
-#: tmp.py:59
+#: tmp1.py:59
 msgid "Initial path"
 msgstr "Początkowa ścieżka"
 
-#: tmp.py:60
+#: tmp1.py:60
 msgid "~"
 msgstr ""
 
-#: tmp.py:61
+#: tmp1.py:61
 msgid "Remember last visited path"
 msgstr "Zachowaj ostatnią odwiedzoną ścieżkę"
 
-#: tmp.py:65
+#: tmp1.py:65
 msgid "Type"
 msgstr "Typ"
 
-#: tmp.py:66
+#: tmp1.py:66
 msgid "Sort images by"
 msgstr "Sortuj obrazy według"
 
-#: tmp.py:67
+#: tmp1.py:67
 msgid "Sort in reverse order"
 msgstr "Sortuj w odwrotnej kolejności"
 
-#: tmp.py:68
+#: tmp1.py:68
 msgid "Show hidden directories in the tree"
 msgstr "Pokaż ukryte katalogi w drzewie"
 
-#: tmp.py:69
+#: tmp1.py:69
 msgid "Details"
 msgstr "Szczegóły"
 
-#: tmp.py:70
+#: tmp1.py:70
 msgid "Thumbnails"
 msgstr "Miniatury"
 
-#: tmp.py:71
+#: tmp1.py:71
 msgid "Default directory view"
 msgstr "Domyślny widok katalogu"
 
-#: tmp.py:72
+#: tmp1.py:72
 msgid "Details view"
 msgstr "Widok szczegół"
 
-#: tmp.py:73
+#: tmp1.py:73
 msgid "Background colour reflects image type"
 msgstr "Kolor tła określa rodzaj obrazu"
 
-#: tmp.py:74
+#: tmp1.py:74
 msgid "Thumbnails view"
 msgstr "Widok miniatur"
 
-#: tmp.py:75
+#: tmp1.py:75
 msgid "Thumbnails size"
 msgstr "Rozmiar miniatur"
 
-#: tmp.py:76
+#: tmp1.py:76
 msgid "80, 60"
 msgstr ""
 
-#: tmp.py:77
+#: tmp1.py:77
 msgid "Simple"
 msgstr "Prosty"
 
-#: tmp.py:78
+#: tmp1.py:78
 msgid "Button"
 msgstr "Przycisk"
 
-#: tmp.py:79
+#: tmp1.py:79
 msgid "Frame"
 msgstr "Klatka"
 
-#: tmp.py:80
+#: tmp1.py:80
 msgid "Style"
 msgstr "Styl"
 
-#: tmp.py:81
+#: tmp1.py:81
 msgid "Viewer"
 msgstr "Przeglądarka obrazów"
 
-#: tmp.py:82
+#: tmp1.py:82
 msgid "Show images in fullscreen mode by default"
 msgstr "Pokazuj obrazy w trybie pełnoekranowym domyślnie"
 
-#: tmp.py:83
+#: tmp1.py:83
 msgid "Fit images to window by default"
 msgstr "Dopasuj obrazy do okna domyślnie"
 
-#: tmp.py:84
+#: tmp1.py:84
 msgid "Allow \"fit image\" to enlarge image"
 msgstr "Pozwól na \"dopasuj obraz\" aby powiększyć obraz"
 
-#: tmp.py:85
+#: tmp1.py:85
 msgid "Remember zoom and rotation settings between images"
 msgstr "Zachowaj ustawienia powiększenia oraz rotacji pomiędzy obrazami"
 
-#: tmp.py:86
+#: tmp1.py:86
 msgid "Default size of the viewer window"
 msgstr "Domyślny rozmiar okna przeglądarki obrazów"
 
-#: tmp.py:87
+#: tmp1.py:87
 msgid "640, 600"
 msgstr ""
 
-#: tmp.py:88
+#: tmp1.py:88 tmp2.py:20
 msgid "Slideshow"
 msgstr "Pokaz slajdów"
 
-#: tmp.py:89
+#: tmp1.py:89
 msgid "Switch to fullscreen mode"
 msgstr "Przełącz na tryb pełnoekranowy"
 
-#: tmp.py:90
+#: tmp1.py:90
 msgid "Fit images to window"
 msgstr "Dopasuj obrazy do okna"
 
-#: tmp.py:91
+#: tmp1.py:91
 msgid "Restart slideshow automatically"
 msgstr "Automatycznie uruchom ponownie pokaz slajdów"
 
-#: tmp.py:92
+#: tmp1.py:92
 msgid "Show images in random order"
 msgstr "Pokaż obrazy losowo"
 
-#: tmp.py:93
+#: tmp1.py:93
 msgid "Delay between slides (in seconds)"
 msgstr "Opóźnienie między slajdami (w sekundach)"
 
-#: tmp.py:94
+#: tmp1.py:94
 msgid "Advanced"
 msgstr "Zawansowane"
 
-#: tmp.py:95
+#: tmp1.py:95
 msgid "Nearest (Faster - Lower quality)"
 msgstr "Najbliższy (szybciej - niska jakość)"
 
-#: tmp.py:96
+#: tmp1.py:96
 msgid "Linear"
 msgstr "Linijny"
 
-#: tmp.py:97
+#: tmp1.py:97
 msgid "Cubic (Higher quality - Slower)"
 msgstr "Sześcienny (wyższa jakość - wolniej)"
 
-#: tmp.py:98
+#: tmp1.py:98
 msgid "AntiAlias (Highest - Slowest)"
 msgstr "AntiAlias (najwyższa jakość - najwolniej)"
 
-#: tmp.py:99
+#: tmp1.py:99
 msgid "Interpolation to use to resize images:"
 msgstr "Interpolacja do zmiany rozmiaru obrazów:"
 
-#: tmp.py:100
+#: tmp1.py:100
 msgid "Thumbnails cache size (in Kb)"
 msgstr "Rozmiar cache dla miniatur (w KB)"
 
-#: tmp.py:101
+#: tmp1.py:101
 msgid "Show icon on the system tray"
 msgstr "Pokaż ikonę w zasobniku systemowym"
 
-#: tmp.py:102
+#: tmp1.py:102
 msgid "Use system file dialog (KDE only)"
 msgstr "Użyj dialogu systemu plików (tylko w KDE)"
+
+#: tmp2.py:1
+msgid "View Image"
+msgstr "Pokaż obraz"
+
+#: tmp2.py:2
+msgid "Up Direcrory"
+msgstr "Nadrzędny katalog"
+
+#: tmp2.py:3
+msgid "Open ZIP archive"
+msgstr "Otwórz archiwum ZIP"
+
+#: tmp2.py:4 tmp2.py:17
+msgid "Refresh"
+msgstr "Odśwież"
+
+#: tmp2.py:5
+msgid "View Details"
+msgstr "Pokaż szczegóły"
+
+#: tmp2.py:6
+msgid "View Thumbnails"
+msgstr "Pokaż miniatury"
+
+#: tmp2.py:7
+msgid "Exit Cornice"
+msgstr "Zakończ Cornice"
+
+#: tmp2.py:8
+msgid "First Image"
+msgstr "Pierwszy obraz"
+
+#: tmp2.py:9
+msgid "Previous Image"
+msgstr "Poprzedni obraz"
+
+#: tmp2.py:10
+msgid "Next Image"
+msgstr "Następny obraz"
+
+#: tmp2.py:11
+msgid "Last Image"
+msgstr "Ostatni obraz"
+
+#: tmp2.py:12
+msgid "Zoom Out"
+msgstr "Pomniejszenie"
+
+#: tmp2.py:13
+msgid "Zoom In"
+msgstr "Powiększenie"
+
+#: tmp2.py:14
+msgid "Default Zoom"
+msgstr "Domyślne powiększenie"
+
+#: tmp2.py:15
+msgid "Fit Screen"
+msgstr "Dopasuj do ekranu"
+
+# manually added 2003-06-07
+#: tmp2.py:16
+msgid "Keep zoom and rotation settings"
+msgstr "Zachowaj ustawienia powiększenia oraz rotacji"
+
+#: tmp2.py:18
+msgid "Rotate Left"
+msgstr "Obróć w lewo"
+
+#: tmp2.py:19
+msgid "Rotate Right"
+msgstr "Obróć w prawo"
+
+#: tmp2.py:21
+msgid "Fullscreen"
+msgstr "Pełny ekran"
 
 #: tray.py:24
 msgid "Show/Hide"
@@ -624,61 +701,3 @@ msgstr "Wyjdź"
 
 #~ msgid "Adjust size of the fullscreen window"
 #~ msgstr "Dostosuj rozmiar okna pełnoekranowego"
-
-#~ msgid "Up Direcrory"
-#~ msgstr "Nadrzędny katalog"
-
-#~ msgid "View Image"
-#~ msgstr "Pokaż obraz"
-
-#~ msgid "Refresh"
-#~ msgstr "Odśwież"
-
-#~ msgid "View Details"
-#~ msgstr "Pokaż szczegóły"
-
-#~ msgid "View Thumbnails"
-#~ msgstr "Pokaż miniatury"
-
-#~ msgid "Exit Cornice"
-#~ msgstr "Zakończ Cornice"
-
-#~ msgid "First Image"
-#~ msgstr "Pierwszy obraz"
-
-#~ msgid "Previous Image"
-#~ msgstr "Poprzedni obraz"
-
-#~ msgid "Next Image"
-#~ msgstr "Następny obraz"
-
-#~ msgid "Last Image"
-#~ msgstr "Ostatni obraz"
-
-#~ msgid "Zoom Out"
-#~ msgstr "Pomniejszenie"
-
-#~ msgid "Zoom In"
-#~ msgstr "Powiększenie"
-
-#~ msgid "Default Zoom"
-#~ msgstr "Domyślne powiększenie"
-
-#~ msgid "Fit Screen"
-#~ msgstr "Dopasuj do ekranu"
-
-#~ msgid "Rotate Left"
-#~ msgstr "Obróć w lewo"
-
-#~ msgid "Rotate Right"
-#~ msgstr "Obróć w prawo"
-
-#~ msgid "Fullscreen"
-#~ msgstr "Pełny ekran"
-
-# manually added 2003-06-07
-#~ msgid "Keep zoom and rotation settings"
-#~ msgstr "Zachowaj ustawienia powiększenia oraz rotacji"
-
-#~ msgid "Open ZIP archive"
-#~ msgstr "Otwórz archiwum ZIP"
