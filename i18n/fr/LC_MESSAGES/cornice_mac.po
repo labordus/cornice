@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
-"POT-Creation-Date: Fri May 16 17:45:02 2003\n"
+"POT-Creation-Date: 2008-10-16 08:48+CEST\n"
 "PO-Revision-Date: 2005-03-05 15:21+0100\n"
 "Last-Translator: Alberto Griggio <agriggio@users.sourceforge.net>\n"
 "Language-Team: Italian <it@li.org>\n"
@@ -14,44 +14,63 @@ msgstr ""
 "Content-Transfer-Encoding: ISO-8859-1\n"
 "Generated-By: pygettext.py 1.4\n"
 
-
-#: -:19 -:580
+#: bmarks.py:28 exif_info.py:19 picture_list.py:52 resources.py:38 tmp.py:62
 msgid "Name"
 msgstr "Nom"
 
-#: -:20
+#: bmarks.py:29 resources.py:39
 msgid "Path"
 msgstr "Repertoire"
 
-#: -:83
+#: bmarks.py:93
 msgid "Select the name for the bookmark"
 msgstr "Donner un nom au Marque-Pages"
 
-#: -:84
+#: bmarks.py:94
 msgid "Add Bookmark"
 msgstr "Ajouter un Marque-Pages"
 
-#: -:91
+#: bmarks.py:101
 msgid "Error adding bookmark!"
 msgstr "Erreur lors de l'ajout du Marque-Page!"
 
-#: -:290
-msgid ""
-"Cornice v%s: a Python + wxPython + PIL image viewer\n"
-"Running on Python %s, wxPython %s and PIL %s\n"
-"Author: Alberto Griggio <agriggio@users.sourceforge.net>\n"
-"Thanks to: see credits.txt\n"
-"License: GPL (see license.txt)\n"
-"THIS PROGRAM COMES WITH NO WARRANTY"
+#: clipboard.py:32
+msgid "Data can't be copied to the clipboard."
 msgstr ""
-"Cornice v%s: un visualisateur d'image en Python + wxPython + PIL\n"
-"(Python %s, wxPython %s, PIL %s)\n"
-"Auteur: Alberto Griggio <agriggio@users.sourceforge.net>\n"
-"Merci à: voir credits.txt\n"
-"License: GPL (voir license.txt)\n"
-"CE PROGRAMME EST FOURNIT SANS AUCUNE GARANTIE"
 
-#: -:308
+#: clipboard.py:38 clipboard.py:77
+msgid "The clipboard can't be opened."
+msgstr ""
+
+#: clipboard.py:68
+msgid "Data can't be copied from clipboard."
+msgstr ""
+
+#: clipboard.py:72
+msgid "Data can't be copied from the clipboard."
+msgstr ""
+
+#: clipboard.py:117
+msgid "Please only drop one file at a time"
+msgstr ""
+
+#: exif_info.py:20
+msgid "Value"
+msgstr ""
+
+#: fileops.py:177
+msgid "Can't delete on a virtual filesystem"
+msgstr ""
+
+#: main.py:31 main.py:402
+msgid "Preview"
+msgstr ""
+
+#: main.py:32 main.py:389
+msgid "Exif data"
+msgstr ""
+
+#: main.py:145
 msgid ""
 " SPACE or PG_DOWN:     Show next image\n"
 " BACKSPACE or PG_UP:   Show previous image\n"
@@ -72,7 +91,6 @@ msgid ""
 " S:                    Start/Stop slideshow\n"
 " F11:                  Toggle fullscreen mode\n"
 " ESC:                  Close viewer frame\n"
-
 msgstr ""
 " SPACE or PG_DOWN:     Voir l'image suivante\n"
 " BACKSPACE or PG_UP:   Voir l'image précédente\n"
@@ -89,473 +107,583 @@ msgstr ""
 " K:                    Se rapeller des paramétres du zoom et de la rotation\n"
 " F5:                   Rafraichir l'image\n"
 " R:                    Tourner l'image de 90 degrés dans le sens horaire\n"
-" L:                    Tourner l'image de 90 degrés dans le sens anti-horaire\n"
+" L:                    Tourner l'image de 90 degrés dans le sens anti-"
+"horaire\n"
 " S:                    Démarrer/Stopper le diaporama\n"
 " F12:                  Mode plein écran\n"
 " ESC:                  Fermer le visualisateur\n"
 
-#: -:331
+#: main.py:167
 msgid "Cornice Viewer Key Bindings"
 msgstr "Racourcis clavier du visionneur"
 
-#: -:427
-msgid "Picture Browser - Cornice"
-msgstr "Explorateur d'images - Cornice"
-
-#: -:433
-msgid "Tree"
-msgstr "Explorateur"
-
-#: -:434
-msgid "Bookmarks"
-msgstr "Marque-Page"
-
-#: -:516
-msgid "Picture Viewer - Cornice"
-msgstr "Visionneur d'images - Cornice"
-
-#: -:581
-msgid "Date"
-msgstr "Data"
-
-#: -:582
-msgid "Size"
-msgstr "Taille"
-
-#: -:583
-msgid "Image Properties"
-msgstr "Propriétés de l'image"
-
-#: -:813
-msgid "Total %s file(s), (%s)"
-msgstr "Total %s fichier(s), (%s)"
-
-#: -:821
-msgid "Delete (%s) item(s)?"
-msgstr "Supprimer (%s) élément(s)?"
-
-#: -:822
-msgid "Are you sure?"
-msgstr "Etes-vous sur?"
-
-#: -:1736 -:1760
-msgid "Error"
-msgstr "Erreur"
-
-#: -:1736 -:1760
-msgid "You must insert a valid path!"
-msgstr "Vous devez donner un chemin valide!"
-
-#: -:1852
-msgid "Unable to save bookmarks!"
-msgstr "Impossible d'enregistrer les Marques-Pages!"
-
-#: -:1899
-msgid "Unable to save preferences (%s)"
-msgstr "Impossible d'enregistrer les préférences (%s)"
-
-msgid "About Cornice"
-msgstr "Au sujet de Cornice"
-
-#: /home/alb/python/Cornice/resources.xrc:7
-msgid "Preferences - Cornice"
-msgstr "Preferences - Cornice"
-
-#: /home/alb/python/Cornice/resources.xrc:17
-msgid "Browser"
-msgstr "Explorateur"
-
-#: /home/alb/python/Cornice/resources.xrc:35
-msgid "Initial path"
-msgstr "Chemin initial"
-
-#: /home/alb/python/Cornice/resources.xrc:56
-msgid "Type"
-msgstr "Type"
-
-#: /home/alb/python/Cornice/resources.xrc:61
-msgid "Sort images by"
-msgstr "Trier les images par"
-
-#: /home/alb/python/Cornice/resources.xrc:69
-msgid "Sort in reverse order"
-msgstr "Tri inverse"
-
-#: /home/alb/python/Cornice/resources.xrc:76
-msgid "Show hidden directories in the tree"
-msgstr "Monter les fichiers cachés"
-
-#: /home/alb/python/Cornice/resources.xrc:84
-msgid "Details"
-msgstr "Details"
-
-#: /home/alb/python/Cornice/resources.xrc:85
-msgid "Thumbnails"
-msgstr "Miniatures"
-
-#: /home/alb/python/Cornice/resources.xrc:90
-msgid "Default directory view"
-msgstr "Repertoire des vues par défaut"
-
-#: /home/alb/python/Cornice/resources.xrc:99
-msgid "Viewer"
-msgstr "Visionneur"
-
-#: /home/alb/python/Cornice/resources.xrc:114
-msgid "Show images in fullscreen mode by default"
-msgstr "Voir les images en plein écran par défaut"
-
-#: /home/alb/python/Cornice/resources.xrc:121
-msgid "Fit images to window by default"
-msgstr "Adapter lesimages a la fenêtre par défaut"
-
-#: /home/alb/python/Cornice/resources.xrc:132
-msgid "Default size of the viewer window"
-msgstr "Dimension par défaut du visionneur"
-
-#: /home/alb/python/Cornice/resources.xrc:155
-msgid "Switch to fullscreen mode"
-msgstr "Basculer en plein écran"
-
-#: /home/alb/python/Cornice/resources.xrc:163
-msgid "Fit images to window"
-msgstr "Adapter les images à la fenêtre"
-
-#: /home/alb/python/Cornice/resources.xrc:174
-msgid "Delay between slides (in seconds)"
-msgstr "Delais entre chaque image (en secondes)"
-
-#: /home/alb/python/Cornice/resources.xrc:197
-msgid "Advanced"
-msgstr "Avancé"
-
-#: /home/alb/python/Cornice/resources.xrc:215
-msgid "Adjust position of the fullscreen window"
-msgstr "Ajuster la position du mode plein écran"
-
-#: /home/alb/python/Cornice/resources.xrc:230
-msgid "Adjust size of the fullscreen window"
-msgstr "Ajuster la taille de la fenêtre plein écran"
-
-#: /home/alb/python/Cornice/resources.xrc:248
-msgid "Nearest (Faster - Lower quality)"
-msgstr "Regioni confinanti (Veloce - Bassa qualità)"
-
-#: /home/alb/python/Cornice/resources.xrc:249
-msgid "Linear"
-msgstr "Lineare"
-
-#: /home/alb/python/Cornice/resources.xrc:250
-msgid "Cubic (Higher quality - Slower)"
-msgstr ""
-
-#: /home/alb/python/Cornice/resources.xrc:255
-msgid "Interpolation to use to resize images:"
-msgstr "Interpolation a utiliser lors du zoom"
-
-#: /home/alb/python/Cornice/resources.xrc:266
-msgid "Thumbnails cache size (in Kb)"
-msgstr "Taille du cache des vignettes (en Kb)"
-
-#: /home/alb/python/Cornice/resources.xrc:294 /home/alb/python/Cornice/resources.xrc:512
-msgid "OK"
-msgstr "OK"
-
-#: /home/alb/python/Cornice/resources.xrc:301 /home/alb/python/Cornice/resources.xrc:520
-msgid "Cancel"
-msgstr "Annuler"
-
-#: /home/alb/python/Cornice/resources.xrc:310
-msgid "&File"
-msgstr "&Fichier"
-
-#: /home/alb/python/Cornice/resources.xrc:312
-msgid "View"
-msgstr "Visionner"
-
-#: /home/alb/python/Cornice/resources.xrc:315
-msgid "Delete selection\tDel"
-msgstr "Supprimer la selection\tSuppr"
-
-#: /home/alb/python/Cornice/resources.xrc:318
-msgid "Up directory"
-msgstr "Repertoire supérieur"
-
-#: /home/alb/python/Cornice/resources.xrc:322
-msgid "Preferences...\tCtrl+P"
-msgstr "Preferences...\tCtrl+P"
-
-#: /home/alb/python/Cornice/resources.xrc:326
-msgid "E&xit\tCtrl+Q"
-msgstr "&Quitter\tCtrl+Q"
-
-#: /home/alb/python/Cornice/resources.xrc:330
-msgid "&View"
-msgstr "&Visionner"
-
-#: /home/alb/python/Cornice/resources.xrc:332
-msgid "Details\tF3"
-msgstr "Details\tCtrl+3"
-
-#: /home/alb/python/Cornice/resources.xrc:336
-msgid "Thumbnails\tF4"
-msgstr "Thumbnails\tCtrl+4"
-
-#: /home/alb/python/Cornice/resources.xrc:341
-msgid "Tree\tAlt+T"
-msgstr "Explorateur\tCtrl+T"
-
-#: /home/alb/python/Cornice/resources.xrc:344
-msgid "Bookmarks\tAlt+B"
-msgstr "Marques-Pages\tCtrl+B"
-
-#: /home/alb/python/Cornice/resources.xrc:348
-msgid "Hidden dirs\tCtrl+H"
-msgstr "Cacher les repertoires\tCtrl+H"
-
-#: /home/alb/python/Cornice/resources.xrc:352
-msgid "Refresh\tF5"
-msgstr "Rafraichir\tCtrl+5"
-
-#: /home/alb/python/Cornice/resources.xrc:356
-msgid "Sort"
-msgstr "Trier"
-
-#: /home/alb/python/Cornice/resources.xrc:358
-msgid "By Name"
-msgstr "Par Nom"
-
-#: /home/alb/python/Cornice/resources.xrc:362
-msgid "By Date"
-msgstr "Par Date"
-
-#: /home/alb/python/Cornice/resources.xrc:366
-msgid "By Size"
-msgstr "Par Taille"
-
-#: /home/alb/python/Cornice/resources.xrc:370
-msgid "By Image Properties"
-msgstr "Par Propriétés d'images"
-
-#: /home/alb/python/Cornice/resources.xrc:375
-msgid "Reverse"
-msgstr "Tri inverse"
-
-#: /home/alb/python/Cornice/resources.xrc:381
-msgid "&Bookmarks"
-msgstr "Marques-pages"
-
-#: /home/alb/python/Cornice/resources.xrc:383
-msgid "Add bookmark\tCtrl+D"
-msgstr "Ajouter un Marques-Pages\tCtrl+D"
-
-#: /home/alb/python/Cornice/resources.xrc:386
-msgid "Edit Bookmarks..."
-msgstr "Editer les Marques-Pages..."
-
-#: /home/alb/python/Cornice/resources.xrc:390
-msgid "&Help"
-msgstr "&Aide"
-
-#: /home/alb/python/Cornice/resources.xrc:392
-msgid "Viewer keybindings\tF1"
-msgstr "Raccourcis clavier\tCtrl+1"
-
-#: /home/alb/python/Cornice/resources.xrc:395
-msgid "About..."
-msgstr "Au sujet de..."
-
-#: /home/alb/python/Cornice/resources.xrc:402
-msgid "Bookmarks Editor - Cornice"
-msgstr "Editeurs de Marques-Pages - Cornice"
-
-#: /home/alb/python/Cornice/resources.xrc:427
-msgid "Bookmark"
-msgstr "Marque-Page"
-
-#: /home/alb/python/Cornice/resources.xrc:432
-msgid "Name:"
-msgstr "Nom:"
-
-#: /home/alb/python/Cornice/resources.xrc:445
-msgid "Path:"
-msgstr "Repertoire:"
-
-#: /home/alb/python/Cornice/resources.xrc:468
-msgid "Add"
-msgstr "Ajouter"
-
-#: /home/alb/python/Cornice/resources.xrc:476
-msgid "Remove"
-msgstr "Supprimer"
-
-#: /home/alb/python/Cornice/resources.xrc:488
-msgid "Move Up"
-msgstr "Monter"
-
-#: /home/alb/python/Cornice/resources.xrc:496
-msgid "Move Down"
-msgstr "Descendre"
-
-#: /home/alb/python/Cornice/toolbars.xrc:9
-msgid "Up Direcrory"
-msgstr "Repertoire parent"
-
-#: /home/alb/python/Cornice/toolbars.xrc:13
-msgid "View Image"
-msgstr "Voir l'image"
-
-#: /home/alb/python/Cornice/toolbars.xrc:23 /home/alb/python/Cornice/toolbars.xrc:104
-msgid "Refresh"
-msgstr "Rafraîchir"
-
-#: /home/alb/python/Cornice/toolbars.xrc:29
-msgid "View Details"
-msgstr "Voir les details"
-
-#: /home/alb/python/Cornice/toolbars.xrc:35
-msgid "View Thumbnails"
-msgstr "Visionner les miniatures"
-
-#: /home/alb/python/Cornice/toolbars.xrc:45
-msgid "Exit Cornice"
-msgstr "Quitter Cornice"
-
-#: /home/alb/python/Cornice/toolbars.xrc:54
-msgid "First Image"
-msgstr "Premiére image"
-
-#: /home/alb/python/Cornice/toolbars.xrc:59
-msgid "Previous Image"
-msgstr "Image précédente"
-
-#: /home/alb/python/Cornice/toolbars.xrc:64
-msgid "Next Image"
-msgstr "Image suivante"
-
-#: /home/alb/python/Cornice/toolbars.xrc:69
-msgid "Last Image"
-msgstr "Deniére image"
-
-#: /home/alb/python/Cornice/toolbars.xrc:79
-msgid "Zoom Out"
-msgstr "Diminuer le zoom"
-
-#: /home/alb/python/Cornice/toolbars.xrc:84
-msgid "Zoom In"
-msgstr "Augmenter le zoom"
-
-#: /home/alb/python/Cornice/toolbars.xrc:89
-msgid "Default Zoom"
-msgstr "Zoom par défaut"
-
-#: /home/alb/python/Cornice/toolbars.xrc:93
-msgid "Fit Screen"
-msgstr "Ajuster à l'écran"
-
-#: /home/alb/python/Cornice/toolbars.xrc:109
-msgid "Rotate Left"
-msgstr "Rotation a gauche"
-
-#: /home/alb/python/Cornice/toolbars.xrc:114
-msgid "Rotate Right"
-msgstr "Rotation a droite"
-
-#: /home/alb/python/Cornice/toolbars.xrc:123 /home/alb/python/Cornice/resources.xrc:149
-msgid "Slideshow"
-msgstr "Diaporama"
-
-#: /home/alb/python/Cornice/toolbars.xrc:133
-msgid "Fullscreen"
-msgstr "Plein écran"
-
-# manually added 2003-06-07
-msgid "Keep zoom and rotation settings"
-msgstr "Garder la configuration du zoom et de la rotation"
-
-msgid "Remember zoom and rotation settings between images"
-msgstr "Garder la valeur du zoom et de la rotation entre les images"
-
-msgid "Open ZIP archive\tCtrl+O"
-msgstr "Ouvrir une archive ZIP\tCtrl+O"
-
-msgid "Remember last visited path"
-msgstr "Se souvenir du dernier répertoire"
-
-msgid "Restart slideshow automatically"
-msgstr "Redémarrer le Diaporama automatiquement"
-
-msgid "Show images in random order"
-msgstr "Voir les images dans un ordre aléatoire"
-
-msgid "Allow \"fit image\" to enlarge image"
-msgstr ""
-
-msgid "Changes will take effect next time you start Cornice"
-msgstr "Les changements prendrons effet au prochain redémarrage de Cornice"
-
-msgid "Information"
-msgstr "Information"
-
-msgid "Thumbnails size"
-msgstr "Taille de la Miniature"
-
-msgid "Select ZIP archive to open"
-msgstr "Selectionnez l'archive ZIP à ouvrir"
-
+#: main.py:244 tmp.py:30
 msgid "&Edit"
 msgstr "&Edition"
 
-msgid "Cut\tCtrl+X"
-msgstr "Couper\tCtrl+X"
+#: main.py:260
+msgid "Select ZIP archive to open"
+msgstr "Selectionnez l'archive ZIP à ouvrir"
 
-msgid "Copy\tCtrl+C"
-msgstr "Copier\tCtrl+C"
+#: main.py:318
+msgid "Picture Browser - Cornice"
+msgstr "Explorateur d'images - Cornice"
 
-msgid  "Paste\tCtrl+V"
-msgstr "Coller\tCtrl+V"
+#: main.py:333
+msgid "Tree"
+msgstr "Explorateur"
 
-msgid "The image already exists"
-msgstr "L'image existe déja"
+#: main.py:334
+msgid "Bookmarks"
+msgstr "Marque-Page"
 
-msgid "Do you want to overwrite the image on the left with that on the right?"
-msgstr "Voulez vous remplacer l'image de gauche par celle de droite ?"
+#: main.py:606
+msgid "Picture Viewer - Cornice"
+msgstr "Visionneur d'images - Cornice"
 
-msgid "New image name"
-msgstr "Nouveau nom de l'image"
+#: main.py:645 resources.py:221
+msgid "Unable to save preferences (%s)"
+msgstr "Impossible d'enregistrer les préférences (%s)"
 
-msgid "Rename"
-msgstr "Renommer"
+#: picture_list.py:53 tmp.py:63
+msgid "Date"
+msgstr "Data"
 
-msgid "Skip"
-msgstr "Sauter"
+#: picture_list.py:54 tmp.py:64
+msgid "Size"
+msgstr "Taille"
 
-msgid "Auto skip"
-msgstr "Sauter automatiquement"
+#: picture_list.py:55
+msgid "Image Properties"
+msgstr "Propriétés de l'image"
 
-msgid "Overwrite"
-msgstr "Remplacer"
+#: picture_list.py:394
+msgid "Total %s file(s), (%s)"
+msgstr "Total %s fichier(s), (%s)"
 
-msgid "Overwrite all"
-msgstr "Remplacer tout"
+#: picture_list.py:405
+#, fuzzy
+msgid "Delete %s picture(s)?"
+msgstr "Supprimer (%s) élément(s)?"
 
+#: picture_list.py:407
+msgid "Are you sure?"
+msgstr "Etes-vous sur?"
+
+#: picture_list.py:430
+msgid "Error"
+msgstr "Erreur"
+
+#: picture_list.py:431
 msgid "Can't paste on this path: %s"
 msgstr "Impossible de copier dans ce repertoire: %s"
 
+#: resources.py:163
+msgid "Unable to save bookmarks!"
+msgstr "Impossible d'enregistrer les Marques-Pages!"
+
+#: resources.py:183
+msgid "Changes will take effect next time you start Cornice"
+msgstr "Les changements prendrons effet au prochain redémarrage de Cornice"
+
+#: resources.py:184
+msgid "Information"
+msgstr "Information"
+
+#: resources.py:326
 msgid "UNSUPPORTED FORMAT"
 msgstr "FORMAT NON SUPPORTE"
 
+#: resources.py:374
+msgid ""
+"Cornice v%s: a Python + wxPython + PIL image viewer\n"
+"Running on Python %s, wxPython %s and PIL %s\n"
+"Author: Alberto Griggio <agriggio@users.sourceforge.net>\n"
+"Thanks to: see credits.txt\n"
+"License: GPL (see license.txt)\n"
+"THIS PROGRAM COMES WITH NO WARRANTY"
+msgstr ""
+"Cornice v%s: un visualisateur d'image en Python + wxPython + PIL\n"
+"(Python %s, wxPython %s, PIL %s)\n"
+"Auteur: Alberto Griggio <agriggio@users.sourceforge.net>\n"
+"Merci à: voir credits.txt\n"
+"License: GPL (voir license.txt)\n"
+"CE PROGRAMME EST FOURNIT SANS AUCUNE GARANTIE"
+
+#: tmp.py:1
+msgid "Bookmarks Editor - Cornice"
+msgstr "Editeurs de Marques-Pages - Cornice"
+
+#: tmp.py:2
+msgid "Bookmark"
+msgstr "Marque-Page"
+
+#: tmp.py:3
+msgid "Name:"
+msgstr "Nom:"
+
+#: tmp.py:4
+msgid "Path:"
+msgstr "Repertoire:"
+
+#: tmp.py:5
+msgid "Add"
+msgstr "Ajouter"
+
+#: tmp.py:6
+msgid "Remove"
+msgstr "Supprimer"
+
+#: tmp.py:7
+msgid "Move Up"
+msgstr "Monter"
+
+#: tmp.py:8
+msgid "Move Down"
+msgstr "Descendre"
+
+#: tmp.py:9 tmp.py:56 tmp.py:103
+msgid "OK"
+msgstr "OK"
+
+#: tmp.py:10 tmp.py:23 tmp.py:104
+msgid "Cancel"
+msgstr "Annuler"
+
+#: tmp.py:11
+msgid "The image already exists"
+msgstr "L'image existe déja"
+
+#: tmp.py:12
+msgid "Do you want to overwrite the image on the left with that on the right?"
+msgstr "Voulez vous remplacer l'image de gauche par celle de droite ?"
+
+#: tmp.py:13
+msgid "orig&image&info"
+msgstr ""
+
+#: tmp.py:14
+msgid "new&image&info"
+msgstr ""
+
+#: tmp.py:15
+msgid "orig&file&info"
+msgstr ""
+
+#: tmp.py:16
+msgid "new&file&info"
+msgstr ""
+
+#: tmp.py:17
+msgid "New image name"
+msgstr "Nouveau nom de l'image"
+
+#: tmp.py:18
+msgid "Rename"
+msgstr "Renommer"
+
+#: tmp.py:19
+msgid "Skip"
+msgstr "Sauter"
+
+#: tmp.py:20
+msgid "Auto skip"
+msgstr "Sauter automatiquement"
+
+#: tmp.py:21
+msgid "Overwrite"
+msgstr "Remplacer"
+
+#: tmp.py:22
+msgid "Overwrite all"
+msgstr "Remplacer tout"
+
+#: tmp.py:24
+msgid "&File"
+msgstr "&Fichier"
+
+#: tmp.py:25
+msgid "View"
+msgstr "Visionner"
+
+#: tmp.py:26
+msgid "Up directory"
+msgstr "Repertoire supérieur"
+
+#: tmp.py:27
+msgid "Open ZIP archive\tCtrl+O"
+msgstr "Ouvrir une archive ZIP\tCtrl+O"
+
+#: tmp.py:28
+msgid "Preferences...\tCtrl+P"
+msgstr "Preferences...\tCtrl+P"
+
+#: tmp.py:29
+msgid "E&xit\tCtrl+Q"
+msgstr "&Quitter\tCtrl+Q"
+
+#: tmp.py:31
+#, fuzzy
+msgid "Delete\tDel"
+msgstr "Supprimer la selection\tSuppr"
+
+#: tmp.py:32
+msgid "Cut\tCtrl+X"
+msgstr "Couper\tCtrl+X"
+
+#: tmp.py:33
+msgid "Copy\tCtrl+C"
+msgstr "Copier\tCtrl+C"
+
+#: tmp.py:34
+msgid "Paste\tCtrl+V"
+msgstr "Coller\tCtrl+V"
+
+#: tmp.py:35
+msgid "&View"
+msgstr "&Visionner"
+
+#: tmp.py:36
+msgid "Details\tF3"
+msgstr "Details\tCtrl+3"
+
+#: tmp.py:37
+msgid "Thumbnails\tF4"
+msgstr "Thumbnails\tCtrl+4"
+
+#: tmp.py:38
+msgid "Tree\tAlt+T"
+msgstr "Explorateur\tCtrl+T"
+
+#: tmp.py:39
+msgid "Bookmarks\tAlt+B"
+msgstr "Marques-Pages\tCtrl+B"
+
+#: tmp.py:40
+msgid "Hidden dirs\tCtrl+H"
+msgstr "Cacher les repertoires\tCtrl+H"
+
+#: tmp.py:41
+msgid "Refresh\tF5"
+msgstr "Rafraichir\tCtrl+5"
+
+#: tmp.py:42
+msgid "Sort"
+msgstr "Trier"
+
+#: tmp.py:43
+msgid "By Name"
+msgstr "Par Nom"
+
+#: tmp.py:44
+msgid "By Date"
+msgstr "Par Date"
+
+#: tmp.py:45
+msgid "By Size"
+msgstr "Par Taille"
+
+#: tmp.py:46
+msgid "By Image Properties"
+msgstr "Par Propriétés d'images"
+
+#: tmp.py:47
+msgid "Reverse"
+msgstr "Tri inverse"
+
+#: tmp.py:48
+msgid "&Bookmarks"
+msgstr "Marques-pages"
+
+#: tmp.py:49
+msgid "Add bookmark\tCtrl+D"
+msgstr "Ajouter un Marques-Pages\tCtrl+D"
+
+#: tmp.py:50
+msgid "Edit Bookmarks..."
+msgstr "Editer les Marques-Pages..."
+
+#: tmp.py:51
+msgid "&Help"
+msgstr "&Aide"
+
+#: tmp.py:52
+msgid "Viewer keybindings\tF1"
+msgstr "Raccourcis clavier\tCtrl+1"
+
+#: tmp.py:53
+msgid "About..."
+msgstr "Au sujet de..."
+
+#: tmp.py:54
+msgid "About Cornice"
+msgstr "Au sujet de Cornice"
+
+#: tmp.py:55
+#, fuzzy
+msgid ""
+"Cornice v%s: a Python + wxPython + PIL image viewer\n"
+"Running on Python %s, wxPython %s and PIL %s\n"
+"Author: Alberto Griggio <agriggio@users.sourceforge.net>\n"
+"Thanks to Vineet Jain for porting it to wxPython 2.5\n"
+"License: GPL (see license.txt)\n"
+"THIS PROGRAM COMES WITH NO WARRANTY"
+msgstr ""
+"Cornice v%s: un visualisateur d'image en Python + wxPython + PIL\n"
+"(Python %s, wxPython %s, PIL %s)\n"
+"Auteur: Alberto Griggio <agriggio@users.sourceforge.net>\n"
+"Merci à: voir credits.txt\n"
+"License: GPL (voir license.txt)\n"
+"CE PROGRAMME EST FOURNIT SANS AUCUNE GARANTIE"
+
+#: tmp.py:57
+msgid "Preferences - Cornice"
+msgstr "Preferences - Cornice"
+
+#: tmp.py:58
+msgid "Browser"
+msgstr "Explorateur"
+
+#: tmp.py:59
+msgid "Initial path"
+msgstr "Chemin initial"
+
+#: tmp.py:60
+msgid "~"
+msgstr ""
+
+#: tmp.py:61
+msgid "Remember last visited path"
+msgstr "Se souvenir du dernier répertoire"
+
+#: tmp.py:65
+msgid "Type"
+msgstr "Type"
+
+#: tmp.py:66
+msgid "Sort images by"
+msgstr "Trier les images par"
+
+#: tmp.py:67
+msgid "Sort in reverse order"
+msgstr "Tri inverse"
+
+#: tmp.py:68
+msgid "Show hidden directories in the tree"
+msgstr "Monter les fichiers cachés"
+
+#: tmp.py:69
+msgid "Details"
+msgstr "Details"
+
+#: tmp.py:70
+msgid "Thumbnails"
+msgstr "Miniatures"
+
+#: tmp.py:71
+msgid "Default directory view"
+msgstr "Repertoire des vues par défaut"
+
+#: tmp.py:72
+#, fuzzy
+msgid "Details view"
+msgstr "Details"
+
+#: tmp.py:73
+msgid "Background colour reflects image type"
+msgstr ""
+
+#: tmp.py:74
+#, fuzzy
+msgid "Thumbnails view"
+msgstr "Taille de la Miniature"
+
+#: tmp.py:75
+msgid "Thumbnails size"
+msgstr "Taille de la Miniature"
+
+#: tmp.py:76
+msgid "80, 60"
+msgstr ""
+
+#: tmp.py:77
+#, fuzzy
+msgid "Simple"
+msgstr "Taille"
+
+#: tmp.py:78
+msgid "Button"
+msgstr ""
+
+#: tmp.py:79
+#, fuzzy
+msgid "Frame"
+msgstr "Nom"
+
+#: tmp.py:80
+msgid "Style"
+msgstr ""
+
+#: tmp.py:81
+msgid "Viewer"
+msgstr "Visionneur"
+
+#: tmp.py:82
+msgid "Show images in fullscreen mode by default"
+msgstr "Voir les images en plein écran par défaut"
+
+#: tmp.py:83
+msgid "Fit images to window by default"
+msgstr "Adapter lesimages a la fenêtre par défaut"
+
+#: tmp.py:84
+msgid "Allow \"fit image\" to enlarge image"
+msgstr ""
+
+#: tmp.py:85
+msgid "Remember zoom and rotation settings between images"
+msgstr "Garder la valeur du zoom et de la rotation entre les images"
+
+#: tmp.py:86
+msgid "Default size of the viewer window"
+msgstr "Dimension par défaut du visionneur"
+
+#: tmp.py:87
+msgid "640, 600"
+msgstr ""
+
+#: tmp.py:88
+msgid "Slideshow"
+msgstr "Diaporama"
+
+#: tmp.py:89
+msgid "Switch to fullscreen mode"
+msgstr "Basculer en plein écran"
+
+#: tmp.py:90
+msgid "Fit images to window"
+msgstr "Adapter les images à la fenêtre"
+
+#: tmp.py:91
+msgid "Restart slideshow automatically"
+msgstr "Redémarrer le Diaporama automatiquement"
+
+#: tmp.py:92
+msgid "Show images in random order"
+msgstr "Voir les images dans un ordre aléatoire"
+
+#: tmp.py:93
+msgid "Delay between slides (in seconds)"
+msgstr "Delais entre chaque image (en secondes)"
+
+#: tmp.py:94
+msgid "Advanced"
+msgstr "Avancé"
+
+#: tmp.py:95
+msgid "Nearest (Faster - Lower quality)"
+msgstr "Regioni confinanti (Veloce - Bassa qualità)"
+
+#: tmp.py:96
+msgid "Linear"
+msgstr "Lineare"
+
+#: tmp.py:97
+msgid "Cubic (Higher quality - Slower)"
+msgstr ""
+
+#: tmp.py:98
+msgid "AntiAlias (Highest - Slowest)"
+msgstr ""
+
+#: tmp.py:99
+msgid "Interpolation to use to resize images:"
+msgstr "Interpolation a utiliser lors du zoom"
+
+#: tmp.py:100
+msgid "Thumbnails cache size (in Kb)"
+msgstr "Taille du cache des vignettes (en Kb)"
+
+#: tmp.py:101
 msgid "Show icon on the system tray"
 msgstr "Voir l'icone dans la systemtray"
 
+#: tmp.py:102
+msgid "Use system file dialog (KDE only)"
+msgstr "Utiliser le dialogue de selection des fichiers (KDE seulement)"
+
+#: tray.py:24
 msgid "Show/Hide"
 msgstr "Voir/Cacher"
 
+#: tray.py:25
 msgid "Minimize/Restore"
 msgstr "Agrandir/Restaurer"
 
+#: tray.py:27
 msgid "Quit"
 msgstr "Quitter"
 
-msgid "Use system file dialog (KDE only)"
-msgstr "Utiliser le dialogue de selection des fichiers (KDE seulement)"
+#~ msgid "You must insert a valid path!"
+#~ msgstr "Vous devez donner un chemin valide!"
+
+#~ msgid "Adjust position of the fullscreen window"
+#~ msgstr "Ajuster la position du mode plein écran"
+
+#~ msgid "Adjust size of the fullscreen window"
+#~ msgstr "Ajuster la taille de la fenêtre plein écran"
+
+#~ msgid "Up Direcrory"
+#~ msgstr "Repertoire parent"
+
+#~ msgid "View Image"
+#~ msgstr "Voir l'image"
+
+#~ msgid "Refresh"
+#~ msgstr "Rafraîchir"
+
+#~ msgid "View Details"
+#~ msgstr "Voir les details"
+
+#~ msgid "View Thumbnails"
+#~ msgstr "Visionner les miniatures"
+
+#~ msgid "Exit Cornice"
+#~ msgstr "Quitter Cornice"
+
+#~ msgid "First Image"
+#~ msgstr "Premiére image"
+
+#~ msgid "Previous Image"
+#~ msgstr "Image précédente"
+
+#~ msgid "Next Image"
+#~ msgstr "Image suivante"
+
+#~ msgid "Last Image"
+#~ msgstr "Deniére image"
+
+#~ msgid "Zoom Out"
+#~ msgstr "Diminuer le zoom"
+
+#~ msgid "Zoom In"
+#~ msgstr "Augmenter le zoom"
+
+#~ msgid "Default Zoom"
+#~ msgstr "Zoom par défaut"
+
+#~ msgid "Fit Screen"
+#~ msgstr "Ajuster à l'écran"
+
+#~ msgid "Rotate Left"
+#~ msgstr "Rotation a gauche"
+
+#~ msgid "Rotate Right"
+#~ msgstr "Rotation a droite"
+
+#~ msgid "Fullscreen"
+#~ msgstr "Plein écran"
+
+# manually added 2003-06-07
+#~ msgid "Keep zoom and rotation settings"
+#~ msgstr "Garder la configuration du zoom et de la rotation"
