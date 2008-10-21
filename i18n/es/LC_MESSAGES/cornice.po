@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2008-10-16 13:56+CEST\n"
-"PO-Revision-Date: 2008-10-11 09:54+0100\n"
+"PO-Revision-Date: 2008-10-17 09:02-0400\n"
 "Last-Translator: Vico <vicokoby@gmail.com>\n"
 "Language-Team: Vico <vicokoby@gmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -10,11 +10,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Spanish\n"
 
-#: bmarks.py:28 exif_info.py:19 picture_list.py:52 resources.py:38 tmp1.py:62
+#: bmarks.py:28
+#: exif_info.py:19
+#: picture_list.py:52
+#: resources.py:38
+#: tmp1.py:62
 msgid "Name"
 msgstr "Nombre"
 
-#: bmarks.py:29 resources.py:39
+#: bmarks.py:29
+#: resources.py:39
 msgid "Path"
 msgstr "Ruta"
 
@@ -32,23 +37,24 @@ msgstr "¡Error añadiendo marcador!"
 
 #: clipboard.py:32
 msgid "Data can't be copied to the clipboard."
-msgstr ""
+msgstr "Lo datos no pueden ser copiados al portapapeles."
 
-#: clipboard.py:38 clipboard.py:77
+#: clipboard.py:38
+#: clipboard.py:77
 msgid "The clipboard can't be opened."
-msgstr ""
+msgstr "El portapapeles no puede ser abierto."
 
 #: clipboard.py:68
 msgid "Data can't be copied from clipboard."
-msgstr ""
+msgstr "Los datos no pueden ser copiados del portapapeles"
 
 #: clipboard.py:72
 msgid "Data can't be copied from the clipboard."
-msgstr ""
+msgstr "Los datos no pueden ser copiados del portapapeles"
 
 #: clipboard.py:117
 msgid "Please only drop one file at a time"
-msgstr ""
+msgstr "Por favor sólo arrastre un archivo a la vez"
 
 #: exif_info.py:20
 msgid "Value"
@@ -56,13 +62,15 @@ msgstr "Valor"
 
 #: fileops.py:177
 msgid "Can't delete on a virtual filesystem"
-msgstr ""
+msgstr "No se puede eliminar un sistema de archivos virtual"
 
-#: main.py:31 main.py:402
+#: main.py:31
+#: main.py:402
 msgid "Preview"
 msgstr "Vista previa"
 
-#: main.py:32 main.py:389
+#: main.py:32
+#: main.py:389
 msgid "Exif data"
 msgstr "Datos Exif"
 
@@ -112,7 +120,8 @@ msgstr ""
 msgid "Cornice Viewer Key Bindings"
 msgstr "Atajos de teclado del visor de Cornice"
 
-#: main.py:244 tmp1.py:30
+#: main.py:244
+#: tmp1.py:30
 msgid "&Edit"
 msgstr "&Editar"
 
@@ -136,15 +145,18 @@ msgstr "Marcadores"
 msgid "Picture Viewer - Cornice"
 msgstr "Visor de imágenes - Cornice"
 
-#: main.py:645 resources.py:221
+#: main.py:645
+#: resources.py:221
 msgid "Unable to save preferences (%s)"
 msgstr "Imposible guardar las preferencias (%s)"
 
-#: picture_list.py:53 tmp1.py:63
+#: picture_list.py:53
+#: tmp1.py:63
 msgid "Date"
 msgstr "Fecha"
 
-#: picture_list.py:54 tmp1.py:64
+#: picture_list.py:54
+#: tmp1.py:64
 msgid "Size"
 msgstr "Tamaño"
 
@@ -157,9 +169,8 @@ msgid "Total %s file(s), (%s)"
 msgstr "Total %s archivo(s), (%s)"
 
 #: picture_list.py:405
-#, fuzzy
 msgid "Delete %s picture(s)?"
-msgstr "¿Eliminar (%s) elemento(s)?"
+msgstr "¿Eliminar %s imagenes?"
 
 #: picture_list.py:407
 msgid "Are you sure?"
@@ -237,11 +248,15 @@ msgstr "Subir"
 msgid "Move Down"
 msgstr "Bajar"
 
-#: tmp1.py:9 tmp1.py:56 tmp1.py:103
+#: tmp1.py:9
+#: tmp1.py:56
+#: tmp1.py:103
 msgid "OK"
 msgstr "Aceptar"
 
-#: tmp1.py:10 tmp1.py:23 tmp1.py:104
+#: tmp1.py:10
+#: tmp1.py:23
+#: tmp1.py:104
 msgid "Cancel"
 msgstr "Cancelar"
 
@@ -255,19 +270,19 @@ msgstr "¿Quiere sobrescribir la imagen de la izquierda por la de la derecha?"
 
 #: tmp1.py:13
 msgid "orig&image&info"
-msgstr ""
+msgstr "origen&imagen&información"
 
 #: tmp1.py:14
 msgid "new&image&info"
-msgstr ""
+msgstr "nuevo&imagen&información"
 
 #: tmp1.py:15
 msgid "orig&file&info"
-msgstr ""
+msgstr "origen&archivo&información"
 
 #: tmp1.py:16
 msgid "new&file&info"
-msgstr ""
+msgstr "nuevo&archivo&información"
 
 #: tmp1.py:17
 msgid "New image name"
@@ -318,9 +333,8 @@ msgid "E&xit\tCtrl+Q"
 msgstr "&Salir\tCtrl+Q"
 
 #: tmp1.py:31
-#, fuzzy
 msgid "Delete\tDel"
-msgstr "Eliminar selección\tSupr"
+msgstr "Eliminar\tSupr"
 
 #: tmp1.py:32
 msgid "Cut\tCtrl+X"
@@ -415,7 +429,6 @@ msgid "About Cornice"
 msgstr "Acerca de Cornice"
 
 #: tmp1.py:55
-#, fuzzy
 msgid ""
 "Cornice v%s: a Python + wxPython + PIL image viewer\n"
 "Running on Python %s, wxPython %s and PIL %s\n"
@@ -427,7 +440,7 @@ msgstr ""
 "Cornice v%s: a Python + wxPython + PIL image viewer\n"
 "Ejecutándose en Python %s, wxPython %s y PIL %s\n"
 "Autor: Alberto Griggio <agriggio@users.sourceforge.net>\n"
-"Gracias a: vea credits.txt\n"
+"Gracias a Vineet Jain por adecuarlo a wxPython 2.5\n"
 "Licencia: GPL (vea license.txt)\n"
 "ESTE PROGRAMA NO TIENE GARANTIAS"
 
@@ -445,7 +458,7 @@ msgstr "Ruta inicial"
 
 #: tmp1.py:60
 msgid "~"
-msgstr ""
+msgstr "~"
 
 #: tmp1.py:61
 msgid "Remember last visited path"
@@ -497,7 +510,7 @@ msgstr "Tamaño de las miniaturas"
 
 #: tmp1.py:76
 msgid "80, 60"
-msgstr ""
+msgstr "80, 60"
 
 #: tmp1.py:77
 msgid "Simple"
@@ -541,9 +554,10 @@ msgstr "Tamaño por defecto de la ventana del visor"
 
 #: tmp1.py:87
 msgid "640, 600"
-msgstr ""
+msgstr "640, 600"
 
-#: tmp1.py:88 tmp2.py:20
+#: tmp1.py:88
+#: tmp2.py:20
 msgid "Slideshow"
 msgstr "Presentación de diapositivas"
 
@@ -615,7 +629,8 @@ msgstr "Subir un directorio"
 msgid "Open ZIP archive"
 msgstr "Abrir archivo ZIP"
 
-#: tmp2.py:4 tmp2.py:17
+#: tmp2.py:4
+#: tmp2.py:17
 msgid "Refresh"
 msgstr "Refrescar"
 
@@ -693,9 +708,8 @@ msgstr "Salir"
 
 #~ msgid "You must insert a valid path!"
 #~ msgstr "¡Debe insertar una ruta válida!"
-
 #~ msgid "Adjust position of the fullscreen window"
 #~ msgstr "Ajustar posición de la ventana en pantalla completa"
-
 #~ msgid "Adjust size of the fullscreen window"
 #~ msgstr "Ajustar tamaño de la ventana en pantalla completa"
+
