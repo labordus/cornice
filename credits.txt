@@ -1,9 +1,15 @@
 Special thanks to the following people:
 
 - Vineet Jain for the port to wxPython 2.5
-- Nicolas Aguirre for the French translation
 - ``surcouf'' for EXIF support
 
+Translators:
+- German and Polish: M. T. 
+- French: Nicolas Aguirre
+- Spanish: Vico Koby
+- Slovenian: Martin Srebotnjak
+(if you are a translator and are not listed here, please tell me,
+and sorry in advance...)
 
 ...and, of course, thanks to all the people who provided comments, feedback
 and support!
