@@ -4,7 +4,7 @@ Special thanks to the following people:
 - ``surcouf'' for EXIF support
 
 Translators:
-- German and Polish: M. T. 
+- German and Polish: Michał Trzebiatowski
 - French: Nicolas Aguirre
 - Spanish: Vico Koby
 - Slovenian: Martin Srebotnjak
