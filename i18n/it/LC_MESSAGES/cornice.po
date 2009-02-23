@@ -1,24 +1,24 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR ORGANIZATION
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: 0.1\n"
+"Project-Id-Version: Cornice\n"
 "POT-Creation-Date: 2008-10-16 13:56+CEST\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Alberto Griggio <agriggio@users.sourceforge.net>\n"
-"Language-Team: Italian <it@li.org>\n"
+"PO-Revision-Date: 2008-11-26 13:05+0100\n"
+"Last-Translator: Davide Grossato <dgrossato.101 at gmail.com>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-1\n"
-"Content-Transfer-Encoding: ISO-8859-1\n"
-"Generated-By: pygettext.py 1.4\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"X-Poedit-Language: Italian\n"
+"X-Poedit-Country: ITALY\n"
 
-#: bmarks.py:28 exif_info.py:19 picture_list.py:52 resources.py:38 tmp1.py:62
+#: bmarks.py:28
+#: exif_info.py:19
+#: picture_list.py:52
+#: resources.py:38
+#: tmp1.py:62
 msgid "Name"
 msgstr "Nome"
 
-#: bmarks.py:29 resources.py:39
+#: bmarks.py:29
+#: resources.py:39
 msgid "Path"
 msgstr "Percorso"
 
@@ -36,23 +36,24 @@ msgstr "Errore aggiungendo il segnalibro!"
 
 #: clipboard.py:32
 msgid "Data can't be copied to the clipboard."
-msgstr ""
+msgstr "Le informazioni non possono essere copiate negli appunti"
 
-#: clipboard.py:38 clipboard.py:77
+#: clipboard.py:38
+#: clipboard.py:77
 msgid "The clipboard can't be opened."
-msgstr ""
+msgstr "Impossibile aprire gli appunti"
 
 #: clipboard.py:68
 msgid "Data can't be copied from clipboard."
-msgstr ""
+msgstr "Le informazioni non possono essere copiate dagli appunti"
 
 #: clipboard.py:72
 msgid "Data can't be copied from the clipboard."
-msgstr ""
+msgstr "Le informazioni non possono essere copiate dagli appunti"
 
 #: clipboard.py:117
 msgid "Please only drop one file at a time"
-msgstr ""
+msgstr "Prego selezionare un solo file alla volta"
 
 #: exif_info.py:20
 msgid "Value"
@@ -60,13 +61,15 @@ msgstr "Valore"
 
 #: fileops.py:177
 msgid "Can't delete on a virtual filesystem"
-msgstr ""
+msgstr "Impossibile cancellare da un filesystem virtuale"
 
-#: main.py:31 main.py:402
+#: main.py:31
+#: main.py:402
 msgid "Preview"
 msgstr "Anteprima"
 
-#: main.py:32 main.py:389
+#: main.py:32
+#: main.py:389
 msgid "Exif data"
 msgstr "Dati Exif"
 
@@ -117,7 +120,8 @@ msgstr ""
 msgid "Cornice Viewer Key Bindings"
 msgstr "Configurazione dei Tasti per il Visualizzatore"
 
-#: main.py:244 tmp1.py:30
+#: main.py:244
+#: tmp1.py:30
 msgid "&Edit"
 msgstr "&Modifica"
 
@@ -141,15 +145,18 @@ msgstr "Segnalibri"
 msgid "Picture Viewer - Cornice"
 msgstr "Visualizzatore di Immagini - Cornice"
 
-#: main.py:645 resources.py:221
+#: main.py:645
+#: resources.py:221
 msgid "Unable to save preferences (%s)"
 msgstr "Impossibile salvare le preferenze (%s)"
 
-#: picture_list.py:53 tmp1.py:63
+#: picture_list.py:53
+#: tmp1.py:63
 msgid "Date"
 msgstr "Data"
 
-#: picture_list.py:54 tmp1.py:64
+#: picture_list.py:54
+#: tmp1.py:64
 msgid "Size"
 msgstr "Dimensione"
 
@@ -162,9 +169,8 @@ msgid "Total %s file(s), (%s)"
 msgstr "%s file in totale, (%s)"
 
 #: picture_list.py:405
-#, fuzzy
 msgid "Delete %s picture(s)?"
-msgstr "Cancellare (%s) file(s)?"
+msgstr "Cancellare (%s) immagine/i?"
 
 #: picture_list.py:407
 msgid "Are you sure?"
@@ -242,11 +248,15 @@ msgstr "Sposta in alto"
 msgid "Move Down"
 msgstr "Sposta in basso"
 
-#: tmp1.py:9 tmp1.py:56 tmp1.py:103
+#: tmp1.py:9
+#: tmp1.py:56
+#: tmp1.py:103
 msgid "OK"
 msgstr "OK"
 
-#: tmp1.py:10 tmp1.py:23 tmp1.py:104
+#: tmp1.py:10
+#: tmp1.py:23
+#: tmp1.py:104
 msgid "Cancel"
 msgstr "Annulla"
 
@@ -260,19 +270,19 @@ msgstr "Volete sovrascrivere l'immagine a sinistra con quella a destra?"
 
 #: tmp1.py:13
 msgid "orig&image&info"
-msgstr ""
+msgstr "orig&immagine&info"
 
 #: tmp1.py:14
 msgid "new&image&info"
-msgstr ""
+msgstr "nuova&immagine&info"
 
 #: tmp1.py:15
 msgid "orig&file&info"
-msgstr ""
+msgstr "orig&file&info"
 
 #: tmp1.py:16
 msgid "new&file&info"
-msgstr ""
+msgstr "nuovo&file&info"
 
 #: tmp1.py:17
 msgid "New image name"
@@ -320,12 +330,11 @@ msgstr "Preferenze...\tCtrl+P"
 
 #: tmp1.py:29
 msgid "E&xit\tCtrl+Q"
-msgstr "Esci\tCtrl+Q"
+msgstr "&Esci\tCtrl+Q"
 
 #: tmp1.py:31
-#, fuzzy
 msgid "Delete\tDel"
-msgstr "Elimina file selezionati\tDel"
+msgstr "Cancella\tDel"
 
 #: tmp1.py:32
 msgid "Cut\tCtrl+X"
@@ -405,7 +414,7 @@ msgstr "Modifica segnalibri..."
 
 #: tmp1.py:51
 msgid "&Help"
-msgstr "Help"
+msgstr "&Aiuto"
 
 #: tmp1.py:52
 msgid "Viewer keybindings\tF1"
@@ -420,7 +429,6 @@ msgid "About Cornice"
 msgstr "Informazioni su Cornice"
 
 #: tmp1.py:55
-#, fuzzy
 msgid ""
 "Cornice v%s: a Python + wxPython + PIL image viewer\n"
 "Running on Python %s, wxPython %s and PIL %s\n"
@@ -432,7 +440,7 @@ msgstr ""
 "Cornice v%s: un visualizzatore di immagini in Python + wxPython + PIL\n"
 "(Ora su Python %s, wxPython %s e PIL %s)\n"
 "Autore: Alberto Griggio <agriggio@users.sourceforge.net>\n"
-"Ringraziamenti: vedere credits.txt\n"
+"Grazie a Vineet Jain per il porting in wxPython 2.5\n"
 "Licenza: GPL (vedere license.txt)\n"
 "QUESTO PROGRAMMA E` DISTRIBUITO SENZA ALCUNA GARANZIA"
 
@@ -450,7 +458,7 @@ msgstr "Percorso iniziale"
 
 #: tmp1.py:60
 msgid "~"
-msgstr ""
+msgstr "~"
 
 #: tmp1.py:61
 msgid "Remember last visited path"
@@ -485,40 +493,36 @@ msgid "Default directory view"
 msgstr "Modalita` di visualizzazione delle directory"
 
 #: tmp1.py:72
-#, fuzzy
 msgid "Details view"
-msgstr "Dettagli"
+msgstr "Visualizza Dettagli"
 
 #: tmp1.py:73
 msgid "Background colour reflects image type"
 msgstr "Cambia il colore dello sfondo a seconda del tipo di immagine"
 
 #: tmp1.py:74
-#, fuzzy
 msgid "Thumbnails view"
-msgstr "Dimensione delle thumbnail"
+msgstr "Visualizza Anteprime"
 
 #: tmp1.py:75
 msgid "Thumbnails size"
-msgstr "Dimensione delle thumbnail"
+msgstr "Dimensione delle Anteprime"
 
 #: tmp1.py:76
 msgid "80, 60"
-msgstr ""
+msgstr "80,60"
 
 #: tmp1.py:77
-#, fuzzy
 msgid "Simple"
-msgstr "Dimensione"
+msgstr "Semplice"
 
 #: tmp1.py:78
 msgid "Button"
-msgstr ""
+msgstr "Pulsante"
 
 #: tmp1.py:79
-#, fuzzy
 msgid "Frame"
-msgstr "Nome"
+msgstr "Riquadro"
 
 #: tmp1.py:80
 msgid "Style"
@@ -550,9 +554,10 @@ msgstr "Dimensioni iniziali della finestra di visualizzazione"
 
 #: tmp1.py:87
 msgid "640, 600"
-msgstr ""
+msgstr "640, 600"
 
-#: tmp1.py:88 tmp2.py:20
+#: tmp1.py:88
+#: tmp2.py:20
 msgid "Slideshow"
 msgstr "Slideshow"
 
@@ -582,7 +587,7 @@ msgstr "Avanzate"
 
 #: tmp1.py:95
 msgid "Nearest (Faster - Lower quality)"
-msgstr "Regioni confinanti (Veloce - Bassa qualità)"
+msgstr "Regioni confinanti (Veloce - Bassa qualitÃ )"
 
 #: tmp1.py:96
 msgid "Linear"
@@ -593,9 +598,8 @@ msgid "Cubic (Higher quality - Slower)"
 msgstr "Cubica (Alta qualita` - Lenta)"
 
 #: tmp1.py:98
-#, fuzzy
 msgid "AntiAlias (Highest - Slowest)"
-msgstr "Cubica (Alta qualita` - Lenta)"
+msgstr "AntiAlias (Qualita` massima - Più lenta)"
 
 #: tmp1.py:99
 msgid "Interpolation to use to resize images:"
@@ -625,7 +629,8 @@ msgstr "Livello superiore"
 msgid "Open ZIP archive"
 msgstr "Apri archivio ZIP"
 
-#: tmp2.py:4 tmp2.py:17
+#: tmp2.py:4
+#: tmp2.py:17
 msgid "Refresh"
 msgstr "Aggiorna"
 
@@ -704,12 +709,10 @@ msgstr "Esci"
 
 #~ msgid "You must insert a valid path!"
 #~ msgstr "Il percorso specificato deve essere valido!"
-
 #~ msgid "Adjust position of the fullscreen window"
 #~ msgstr "Correzione della posizione a schermo intero"
-
 #~ msgid "Adjust size of the fullscreen window"
 #~ msgstr "Correzione della dimensione a schermo intero"
-
 #~ msgid "Volumes"
 #~ msgstr "Volumi"
+
